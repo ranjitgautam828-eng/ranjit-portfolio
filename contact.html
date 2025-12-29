@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ranjit Gautam</title>
+  <meta name="description" content="Contact Ranjit to discuss backend-focused web development projects.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='white'/><circle cx='50' cy='50' r='45' fill='black'/><text x='50' y='62' text-anchor='middle' font-family='Arial, sans-serif' font-size='48' font-weight='bold' fill='white'>R</text></svg>">
+</head>
+
+<body>
+
+<nav class="nav" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="brand">
+      <strong>Ranjit</strong>
+    </a>
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="stack.html">Stack</a></li>
+      <li><a href="engagement.html">Process</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    
+    <div class="nav-actions">
+      <a href="contact.html" class="nav-action">
+        <i class="fas fa-paper-plane"></i>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 70vh; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="hero-content">
+      <h1>Let's Build Together.</h1>
+      <p class="hero-subtitle">Have a backend-focused project in mind? I work with clients who value robust architecture, clean code, and long-term reliability.</p>
+      <div class="hero-actions">
+        <a href="#contact-form" class="btn btn-primary">
+          Start a Project
+          <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="product-content text-center mb-40">
+      <h2>Get in Touch</h2>
+      <p>I typically respond within 24–48 hours. Tell me about your project and I'll get back to you with a detailed plan.</p>
+    </div>
+
+    <form class="contact-form" id="contact-form" method="post" action="#" novalidate>
+      <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" class="form-control" required placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" class="form-control" required placeholder="you@example.com">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Company / Organization</label>
+        <input id="company" name="company" type="text" class="form-control" placeholder="Your company name (optional)">
+      </div>
+
+      <div class="form-group">
+        <label for="project-type">Project Type</label>
+        <select id="project-type" name="project-type" class="form-control">
+          <option value="">Select project type...</option>
+          <option value="api">API Development</option>
+          <option value="database">Database Design</option>
+          <option value="full-stack">Full-Stack Application</option>
+          <option value="consulting">Technical Consulting</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="budget">Project Budget</label>
+        <select id="budget" name="budget" class="form-control">
+          <option value="">Select budget range...</option>
+          <option value="1-5k">$1,000 - $5,000</option>
+          <option value="5-15k">$5,000 - $15,000</option>
+          <option value="15-30k">$15,000 - $30,000</option>
+          <option value="30k+">$30,000+</option>
+          <option value="undecided">Undecided / Need Quote</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="timeline">Expected Timeline</label>
+        <input id="timeline" name="timeline" type="text" class="form-control" placeholder="e.g., 4–6 weeks, ASAP, Planning phase">
+      </div>
+
+      <div class="form-group">
+        <label for="project">Project Description</label>
+        <textarea id="project" name="project" rows="6" class="form-control" placeholder="Describe the problem you're solving, technical requirements, and your vision..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 18px;">
+        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
+        Send Message
+      </button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="feature-grid mt-60">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>Response Time</h3>
+        <p>Typically respond within 24–48 hours during business days.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-file-contract"></i>
+        </div>
+        <h3>Clear Process</h3>
+        <p>Detailed proposal with scope, timeline, and deliverables before starting.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-code-branch"></i>
+        </div>
+        <h3>Code Ownership</h3>
+        <p>You retain full ownership of all code and intellectual property.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="stack.html">Tech Stack</a>
+      <a href="engagement.html">Process</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    
+    <p class="copyright">© 2025 Ranjit Gautam. All rights reserved.</p>
+    
+    <div class="social-links">
+      <a href="https://github.com/ranjitgautam828-eng" target="_blank" class="social-link" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUx6pKTquSXecnkwDeb6F5A%3D%3D" target="_blank" class="social-link" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile Navigation
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.querySelector('.nav-links');
+  const navbar = document.getElementById('navbar');
+  
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-active');
+  });
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+      navLinks.classList.remove('mobile-active');
+    }
+  });
+  
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+  
+  // Form submission
+  const contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    
+    // In a real app, you would send this to a server
+    console.log('Form data:', data);
+    
+    // Show success message
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    
+    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+    submitBtn.style.background = '#34c759';
+    
+    setTimeout(() => {
+      submitBtn.innerHTML = originalText;
+      submitBtn.style.background = '';
+      this.reset();
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>
